@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script>
+    var path = window.location.pathname;
+    var search = window.location.search;
+    var hash = window.location.hash;
+    var redirect = '?p=' + path.slice(1).split('/').slice(1).join('/') + (search ? '&q=' + search.slice(1) : '') + hash;
+    window.location.replace('/movie-app/' + redirect);
+  </script>
+</head>
+</html>
