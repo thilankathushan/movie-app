@@ -6,7 +6,7 @@ import MyReviews from './pages/MyReviews';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/movie-app">
       <Navbar />
       <Routes>
         <Route path="/"           element={<Home />} />
